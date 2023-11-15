@@ -19,7 +19,10 @@ function draw() {
     for (i = 0; i < numRows; i++) {
       let carbs = data.getColumn("Carbs");
       let names = data.getColumn("Food");
+      
 
+      fill(255);
+      text(names[i], 200, 100 + i * 50);
       rect(50, 100 + i * 50, carbs[i], 20);
     }
   }
